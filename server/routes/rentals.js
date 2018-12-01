@@ -9,7 +9,7 @@ router.get('', function(req,res){
 });
 
 router.get('/:id', function(req, res){
-    console.log(res);
+    // console.log(res);
     
     const rentalId = req.params.id;
     Rental.findById(rentalId, function (err, foundRental) {
